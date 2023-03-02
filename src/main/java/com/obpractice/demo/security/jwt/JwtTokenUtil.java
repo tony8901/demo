@@ -18,7 +18,7 @@ public class JwtTokenUtil {
 
     private static final Logger log = LoggerFactory.getLogger(JwtTokenUtil.class);
 
-    //@Value("${app.jwt.expiration-ms}")
+    //@Value("${app.jwt.expiration-ms}") ¡no esta cargando la variable!
     private final int jwtExpirationMs=86400000;
 
     public JwtTokenUtil() {

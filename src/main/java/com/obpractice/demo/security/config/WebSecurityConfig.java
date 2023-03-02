@@ -27,6 +27,7 @@ import java.util.List;
 @Configuration
 @EnableWebSecurity // permite a Spring aplicar esta configuracion a la configuraicon de seguridad global
 public class WebSecurityConfig{
+
 //    @Bean
 //    public WebSecurityCustomizer webSecurityCustomizer() {
 //        return (web) -> web.ignoring()
@@ -47,12 +48,9 @@ public class WebSecurityConfig{
     @Autowired
     private UserRepository userRepository;
 
-//    @Autowired
-//    private UserDetailsServiceImpl userDetailsService;
-
-
     /**
      * Configuracion global de CORS para toda la aplicacion
+     * ¡¡¡REVISAR!!!
      */
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
@@ -92,10 +90,5 @@ public class WebSecurityConfig{
         http.addFilterBefore(authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
         return http.build();
     }
-//
-//    @Bean
-//    public DaoAuthenticationConfigurer userDetailsService(AuthenticationManagerBuilder auth) throws Exception {
-//        return auth.userDetailsService(userDetailsServiceBean()).passwordEncoder(passwordEncoder());
-//    }
 
 }

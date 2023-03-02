@@ -11,7 +11,6 @@ import java.util.ArrayList;
 
 /**
  * Autentica un usuario de la base de datos
- *
  * Authentication Manager llama al método loadUserByUsername de esta clase
  * para obtener los detalles del usuario de la base de datos cuando
  * se intente autenticar un usuario
@@ -19,10 +18,10 @@ import java.util.ArrayList;
 public class UserDetailsServiceImpl implements UserDetailsService {
 
     @Autowired
-    private UserRepository userRespository;
+    private final UserRepository userRespository;
 
-    public UserDetailsServiceImpl(UserRepository userRespository) {
-        this.userRespository = userRespository;
+    public UserDetailsServiceImpl(UserRepository userRepository) {
+        this.userRespository = userRepository;
     }
 
     @Override

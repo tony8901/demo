@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
  *
  * Si las credenciales son válidas se genera un token JWT como respuesta
  */
-// @CrossOrigin(origins = "http://localhost:8080")
+// @CrossOrigin(origins = "http://localhost:8080/api/auth")
 
 @RestController
 @RequestMapping("/api/auth")
@@ -37,11 +37,6 @@ public class AuthController {
     private final PasswordEncoder encoder;
 
     private final JwtTokenUtil jwtTokenUtil;
-
-//    @Bean
-//    public JwtTokenUtil jwtTokenUtilBean(){
-//        return new JwtTokenUtil();
-//    }
 
     public AuthController(AuthenticationManager authManager,
                           UserRepository userRepository,
@@ -64,8 +59,6 @@ public class AuthController {
 
         SecurityContextHolder.getContext().setAuthentication(authentication);
         String jwt = jwtTokenUtil.generateJwtToken(authentication);
-
-        // UserDetails userDetails = (UserDetails) authentication.getPrincipal();
 
         return ResponseEntity.ok(new JwtResponse(jwt));
     }
