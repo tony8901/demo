@@ -7,3 +7,4 @@ insert into ob_book (autor, digital, pages) VALUES ('autor6', true, 1503);
 insert into ob_book (autor, digital, pages) VALUES ('autor7', true, 20);
 insert into ob_book (autor, digital, pages) VALUES ('autor8', false, 38);
 insert into ob_book (autor, digital, pages) VALUES ('autor9', true, 49);
+insert into ob_user (username, email, password) VALUES ('tony', 'tony@mail.com', '$2a$10$JYkSR6.NZwRtygD7GiQ2uu2/qcP1RvwvnSd/pT5SYkYCuuN1fTDDe')
