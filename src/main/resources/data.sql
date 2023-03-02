@@ -1,0 +1,9 @@
+insert into ob_book (autor, digital, pages) VALUES ('autor1', true, 500);
+insert into ob_book (autor, digital, pages) VALUES ('autor2', false, 485);
+insert into ob_book (autor, digital, pages) VALUES ('autor3', true, 288);
+insert into ob_book (autor, digital, pages) VALUES ('autor4', true, 57);
+insert into ob_book (autor, digital, pages) VALUES ('autor5', false, 1000);
+insert into ob_book (autor, digital, pages) VALUES ('autor6', true, 1503);
+insert into ob_book (autor, digital, pages) VALUES ('autor7', true, 20);
+insert into ob_book (autor, digital, pages) VALUES ('autor8', false, 38);
+insert into ob_book (autor, digital, pages) VALUES ('autor9', true, 49);
