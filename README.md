@@ -1,3 +1,9 @@
 # JSON Web Tokens in Spring Boot
+[![java](https://img.shields.io/badge/java-17-blue.svg)](https://www.java.com) [![spring boot](https://img.shields.io/badge/spring%20boot-3.0.1-brightgreen.svg?logo=springboot)](https://spring.io/) [![apache maven](https://img.shields.io/badge/maven-3.1.0-violet.svg?logo=apachemaven&logoColor=violet)](https://maven.apache.org/) [![spring security](https://img.shields.io/badge/spring%20security-3.0.1-success.svg)](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security/3.0.1) [![jjwt-api](https://img.shields.io/badge/jjwt--api-0.11.5-orange.svg)](https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt-api/0.11.5) [![jjwt-impl](https://img.shields.io/badge/jjwt--impl-0.11.5-success.svg)](https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt-impl/0.11.5) [![jjwt-jackson](https://img.shields.io/badge/jjwt--jackson-0.11.5-orange.svg)](https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt-jackson/0.11.5) [![postgresql](https://img.shields.io/badge/postgresql-14-blue?logo=postgresql&logoColor=white)](https://www.postgresql.org/) [![postgresql jdbc driver](https://img.shields.io/badge/postgresql%20jdbc%20driver-42.5.1-blue.svg?logo=postgresql&logoColor=white)](https://mvnrepository.com/artifact/org.postgresql/postgresql) 
 
 ## Simple project adding security with JSON Web Tokens in Spring Boot
+- Simple API using the basic Spring Boot layers to provide information about books.
+- Through the Spring Security configuration, free access to public directories is provided and authentication will be required for private directories.
+- The API is documented with swagger through the openapi springdoc artifact.
+- The test data is loaded with the `data.sql` file.
+- The `/postman` directory contains the data to consult the API from Postman.
